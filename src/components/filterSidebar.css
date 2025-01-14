@@ -1,0 +1,81 @@
+.filter-sidebar {
+	width: 250px;
+	height: calc(100vh - 180px);
+	background-color: white;
+	padding: 20px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	border: 1px solid #ddd;
+	margin: 20px;
+}
+
+.filter-label {
+	display: block;
+	text-align: center;
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	background-color: #011e7d;
+	color: white;
+	letter-spacing: 2px;
+	font-weight: 800;
+}
+
+.filter-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.filter-menu-item {
+	background-color: #f1f5f9;
+	padding: 12px 15px;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 0.3s ease;
+	margin-top: 10px;
+}
+
+.filter-menu-item:hover {
+	background-color: #e2e8f0;
+}
+
+.filter-menu-item.open {
+	background-color: #d1d5db;
+}
+
+.filter-menu-item i {
+	transition: transform 0.3s ease;
+}
+
+.sub-menu {
+	list-style: none;
+	padding-left: 20px;
+	margin-top: 10px;
+}
+
+.sub-menu-item {
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #555;
+}
+
+.sub-menu-item:hover {
+	color: #007bff;
+	text-decoration: underline;
+}
+
+.sub-menu-item a {
+	text-decoration: none;
+	color: inherit;
+	font-size: 14px;
+}
+
+.main-content {
+	flex-grow: 1;
+	padding: 20px;
+}
