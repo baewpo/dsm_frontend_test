@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import "./Navbar.css"
+import logo from "../assets/website_digital store mesh-08.png"
 
 const Navbar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -15,10 +16,7 @@ const Navbar = () => {
 	return (
 		<nav className="navbar">
 			<div className="navbar-left">
-				<img
-					src="../assets/website_digital store mesh-08.png"
-					className="logo"
-				/>
+				<img src={logo} className="logo" />
 			</div>
 			{isMenuOpen && <div className="overlay"></div>}
 			<div className={`menu-container ${isMenuOpen ? "open" : "close"}`}>
