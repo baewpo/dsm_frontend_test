@@ -29,5 +29,6 @@
 	},
 	"devDependencies": {
 		"gh-pages": "^6.3.0"
-	}
+	},
+	"homepage": "https://baewpo.github.io/dsm_frontend_test"
 }
