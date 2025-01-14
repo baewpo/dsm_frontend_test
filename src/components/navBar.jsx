@@ -16,7 +16,7 @@ const Navbar = () => {
 		<nav className="navbar">
 			<div className="navbar-left">
 				<img
-					src="https://lh4.googleusercontent.com/-82dEH82o1HiV27wA5XMqgBysxBQHj35tk7U5e389g1vbIbNLxGh7Ocj3kxw3jZLfid_uSoTrMXiABuL_xLDocU=w16383"
+					src="../assets/website_digital store mesh-08.png"
 					className="logo"
 				/>
 			</div>

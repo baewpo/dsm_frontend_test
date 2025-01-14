@@ -7,7 +7,7 @@ const Router = () => {
 	return (
 		<Routes>
 			<Route element={<Layout />}>
-				<Route path="/" element={<HomePage />} />
+				<Route path="/dsm_frontend_test/" element={<HomePage />} />
 			</Route>
 		</Routes>
 	)

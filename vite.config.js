@@ -22,5 +22,5 @@ export default defineConfig({
 			routes: path.resolve(__dirname, "src/routes"),
 		},
 	},
-	base: 'dsm_frontend_test'
+	base: '/dsm_frontend_test/'
 })
