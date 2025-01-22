@@ -9,6 +9,12 @@
 	border: 1px solid #ddd;
 }
 
+@media (max-width: 768px) and (orientation: landscape) {
+	.list-container {
+		height: calc(100vh - 100px);
+	}
+}
+
 .list-controller {
 	display: flex;
 	justify-content: space-between;

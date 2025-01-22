@@ -25,7 +25,7 @@
 }
 
 .menu-link {
-    margin-left: 20px;
+	margin-left: 20px;
 	text-decoration: none;
 	color: #333;
 	font-size: 16px;
@@ -56,7 +56,6 @@
 
 .search-box {
 	position: relative;
-	border: none;
 	outline: none;
 	width: 100%;
 	padding: 0.6rem;
@@ -125,28 +124,32 @@
 	}
 
 	.menu-container {
-        display: none;
+		position: fixed;
+		top: 0;
 		left: -100%;
 		flex-direction: column;
 		justify-content: flex-start;
-		position: fixed;
-		top: 0;
 		background: #f9fafb;
 		width: 40%;
 		height: 100vh;
 		padding: 20px;
 		z-index: 2;
 		box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+		visibility: hidden;
 		opacity: 0;
+		transition: all 0.3s ease-out;
 	}
 
 	.menu-container.open {
-		display: flex;
-		animation: slideIn 0.3s ease-out forwards;
+		visibility: visible;
+		opacity: 1;
+		left: 0;
 	}
 
 	.menu-container.close {
-		animation: slideOut 0.3s ease-out forwards;
+		opacity: 0;
+		left: -100%;
+		visibility: hidden;
 	}
 
 	.menu {
@@ -221,27 +224,5 @@
 	.close-btn:hover {
 		color: #1a73e8;
 		background-color: #b9c7ff33;
-	}
-}
-
-@keyframes slideIn {
-	from {
-		left: -100%;
-		opacity: 0;
-	}
-	to {
-		left: 0;
-		opacity: 1;
-	}
-}
-
-@keyframes slideOut {
-	from {
-		left: 0;
-		opacity: 1;
-	}
-	to {
-		left: -100%;
-		opacity: 0;
 	}
 }
